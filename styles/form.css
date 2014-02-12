@@ -1,0 +1,85 @@
+.form {
+	padding-top: 25px;
+}
+
+input, select{
+display : block;
+}
+
+label {
+float : left;
+width : 80px;
+}
+
+input, textarea, select, option{
+padding: 6px;
+margin: 0px 0 0 10px;
+border: solid 1px #000;
+outline: 0;
+font: normal 13px/100% "Droid Sans", sans-serif;
+width: 200px;
+background: #d7dad3 url(‘../images/formBg.png’) left top repeat-x;
+background: -webkit-gradient(linear, left top, left 25, from(#d7dad3), color-stop(4%, #b7bbaf), to(#d7dad3));
+background: -moz-linear-gradient(top, #d7dad3, #b7bbaf 1px, #d7dad3 25px);
+box-shadow: rgba(0,0,0, 0.15) 0px 0px 8px;
+-moz-box-shadow: rgba(0,0,0, 0.15) 0px 0px 8px;
+-webkit-box-shadow: rgba(0,0,0, 0.15) 0px 0px 8px;
+}
+
+option{
+padding:0px;
+}
+
+textarea {
+width: 400px;
+max-width: 400px;
+height: 100px;
+line-height: 150%;
+margin: 0px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus{
+border-color: #d6e300;
+-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+-moz-box-shadow: rgba(0,0,0, 0.15) 0px 0px 8px;
+}
+
+option:hover, option:focus,
+select:hover, select:focus {
+color: #2c3814;
+border-color: #d6e300;
+-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+-moz-box-shadow: rgba(0,0,0, 0.15) 0px 0px 8px;
+}
+
+.message {
+	margin-top: 15px;
+}
+
+.form label {
+margin: 0 10px;
+color: #999999;
+}
+
+label.error {  width: 250px; display: block; float: right; clear: left; color: red; margin:-25px 150px 0 0; } 
+
+.sendButton {
+width: 80px;
+height: 35px;
+margin: 25px 0 0 100px;
+padding: 9px 15px;
+background: #d6e300;
+border: 0;
+cursor: pointer;
+font-size: 14px;
+color: #2c3814;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+
+}
+
+.sendButton:hover {
+	background: #690;
+	color: #d6e300;
+}

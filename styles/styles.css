@@ -1,0 +1,404 @@
+/*
+
+Theme: Mercenary Offroad 0510
+Designer: Jess Blevens @ Interface Factory
+
+bg:				black
+text:			white
+green:			2c3814
+lt green:		b7bbaf
+yellow:			d6e300
+
+*/
+
+ @import url("reset.css");
+ @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+ 
+#preload {
+    position: absolute;
+    overflow: hidden;
+    left: -9999px; 
+    top: -9999px;
+    height: 1px;
+    width: 1px;
+ }
+
+/* Generic Styles */
+
+body {
+background-color: #000;
+text-align: center;
+font-family: "Droid Sans", sans-serif;
+color: white;
+}
+
+h1, h2, h3, h4, h5 {
+margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+h2 {
+font-size: 22px;
+}
+
+h3 {
+color: #745459;
+font-size: 30px;
+line-height: 33px;
+}
+
+h4 {
+color: #2f231e;
+line-height: 20px;
+font-size: 16px;
+text-transform: uppercase;
+}
+
+p {
+font-size: 15px;
+line-height: 20px;
+padding-bottom: 10px;
+}
+
+.sub {
+	font-size: 12px;
+	color:#b7bbaf;
+}
+
+strong {
+	color: #d6e300;
+}
+
+a {
+text-decoration: none;
+color: #b7bbaf;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+#container {
+width: 962px;
+margin: 0px auto;
+text-align: left;
+position: relative;
+}
+
+#social {
+	width: 127px;
+	height: 29px;
+	position: absolute;
+	top: 465px;
+	right: 140px;
+}
+
+#nav {
+	height: 41px;
+	text-align: center;
+}
+
+#nav.set1 {
+	background: black url(../images/mainBg/navBg1.jpg) no-repeat;
+}
+
+#nav.set2 {
+	background: black url(../images/mainBg/navBg2.jpg) no-repeat;
+}
+
+#nav.set3 {
+	background: black url(../images/mainBg/navBg3.jpg) no-repeat;
+}
+
+#nav.set4 {
+	background: black url(../images/mainBg/navBg4.jpg) no-repeat;
+}
+
+#nav.set5 {
+	background: black url(../images/mainBg/navBg5.jpg) no-repeat;
+}
+
+
+#nav ul{
+	list-style:none;
+	text-align:center;
+	margin-left: 100px;
+}
+	#nav li{
+		list-style:none;
+		display:block;
+		float:left;
+		padding:1px 20px 0 20px;
+
+	}
+		#nav li a{
+			display:block;
+			float:left;
+		}
+			#nav li a span{
+				display:none;
+			}
+			#nav li a:hover{
+				text-decoration:none;
+			}
+		#nav li a.home{
+			background:url(../images/navHomeOff.png) no-repeat;
+			width:54px;
+			height:41px;
+		}
+			#nav li a:hover.home{
+				background:url(../images/navHomeOn.png) no-repeat;
+			}
+		#nav li a.covers{
+			background:url(../images/navCoversOff.png) no-repeat;
+			width:132px;
+			height:41px;
+		}
+			#nav li a:hover.covers{
+				background:url(../images/navCoversOn.png) no-repeat;
+			}
+		#nav li a.gussets{
+			background:url(../images/navGussetsOff.png) no-repeat;
+			width:135px;
+			height:41px;
+		}
+			#nav li a:hover.gussets{
+				background:url(../images/navGussetsOn.png) no-repeat;
+			}
+		#nav li a.projects{
+			background:url(../images/navProjectsOff.png) no-repeat;
+			width:98px;
+			height:41px;
+		}
+			#nav li a:hover.projects{
+				background:url(../images/navProjectsOn.png) no-repeat;
+			}
+		#nav li a.contact{
+			background:url(../images/navContactOff.png) no-repeat;
+			width:116px;
+			height:41px;
+		}
+			#nav li a:hover.contact{
+			background:url(../images/navContactOn.png) no-repeat;
+			}
+		
+		#nav li a.homeCurrent, #nav li a:hover.homeCurrent{
+			background:url(../images/navHomeOn.png) no-repeat;
+			width:54px;
+			height:41px;
+		}	
+		#nav li a.coversCurrent, #nav li a:hover.coversCurrent{
+			background:url(../images/navCoversOn.png) no-repeat;
+			width:132px;
+			height:41px;
+		}
+		#nav li a.gussetsCurrent, #nav li a:hover.gusstesCurrent{
+			background:url(../images/navGussetsOn.png) no-repeat;
+			width:135px;
+			height:41px;
+		}
+		#nav li a.projectsCurrent, #nav li a:hover.projectsCurrent{
+			background:url(../images/navProjectsOn.png) no-repeat;
+			width:98px;
+			height:41px;
+		}
+		#nav li a.contactCurrent, #nav li a:hover.contactCurrent{
+			background:url(../images/navContactOn.png) no-repeat;
+			width:116px;
+			height:41px;
+		}
+
+
+.navPrimary {
+	height: 41px;
+	text-align: center;
+	width: 720px;
+min-width:700px;
+	padding-left: 30px;
+	padding-top: 11px;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.navPrimary a {
+	color: white;
+}
+
+.navPrimary a:hover, .navPrimary .current {
+	color: #d6e300;
+}
+
+#content {
+	height: 480px;
+	width: 860px;
+	margin: 0 0 0 49px;
+	background: black url(../images/contentBg.png) bottom repeat-x;
+}
+
+.bodyCopy {
+	padding: 40px 60px;
+}
+
+.features {
+	padding-top: 20px;
+}
+
+.features img {
+	padding: 0 8px;
+}
+
+div.featureCovers {
+height: 281px;
+width: 228px;
+float: left;
+margin:0 22px 0 0;
+padding:0;
+background-image:url(../images/featureCoversOn.jpg);
+}
+
+div.featureCovers a, div.featureCovers a:link, div.featureCovers a:visited {
+display:block;
+}
+
+div.featureCovers img {
+width:100%;
+height:100%;
+border:0;
+}
+
+div.featureCovers a:hover img {
+visibility:hidden;
+}
+
+div.featureGussets {
+height: 281px;
+width: 229px;
+float: left;
+margin:0 22px 0 0;
+padding:0;
+background-image:url(../images/featureGussetsOn.jpg);
+}
+
+div.featureGussets a, div.featureGussets a:link, div.featureGussets a:visited {
+display:block;
+}
+
+div.featureGussets img {
+width:100%;
+height:100%;
+border:0;
+}
+
+div.featureGussets a:hover img {
+visibility:hidden;
+}
+
+div.featureFab {
+height: 281px;
+width: 228px;
+float: left;
+margin:0;
+padding:0;
+background-image:url(../images/featureFabOn.jpg);
+}
+
+div.featureFab a, div.featureFab a:link, div.featureFab a:visited {
+display:block;
+}
+
+div.featureFab img {
+width:100%;
+height:100%;
+border:0;
+}
+
+div.featureFab a:hover img {
+visibility:hidden;
+}
+
+.feature {
+	margin: 15px 4px 0 4px;
+	float: left;
+	text-decoration: none;
+}
+
+.feature img {
+	border: 1px solid #474b10;
+	margin-top: 5px;
+}
+
+.feature img:hover {
+	border: 1px solid #d6e300;
+}
+
+ul.projects {
+	padding-top: 30px;
+}
+
+.projects li {
+	padding: 20px 0 10px 0;
+	border-bottom: 1px dashed #b7bbaf;
+	width: 450px;
+}
+
+.projects p {
+	float: left;
+	margin: -80px 0 0 100px;
+}
+
+.projects img {
+	margin-right: 10px;
+	border: 1px solid #474b10;
+	vertical-align: top;
+}
+
+.projects img:hover{
+	border: 1px solid #d6e300;
+}
+
+#shop {
+	position: absolute;
+	top: 650px;
+	left: 630px;
+	width: 180px;
+	height: 193px;
+	margin: 10px;
+	background-color: #000;
+	padding: 10px;
+	border-bottom: 1px solid #d6e300;
+	border-left: 1px solid #d6e300;
+	border-right: 1px solid #d6e300;
+}
+
+#shopTop {
+	width: 202px;
+	height: 36px;
+	NObackground-image: url(../images/shopTop.png);
+	position: absolute;
+	top: 624px;
+	left: 640px;
+}
+
+.price {
+	font-size: 18px;
+	color:  #993333;
+}
+
+.shipping {
+	font-size: 11px;
+	color:  #b7bbaf;
+}
+
+#footer {
+	height: 97px;
+	background: black url(../images/footer.png) top;
+}
+
+#projectImages {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
