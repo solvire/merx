@@ -2,103 +2,129 @@
 <html>
 
 <head>
-<title>MERCENARY OFFROAD: Contact Us </title>
-<meta name="description" content="Off road protection and custom fabrication" />
+<title>MERCENARY OFFROAD: Contact Us</title>
+<meta name="description"
+	content="Off road protection and custom fabrication" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 <link rel="stylesheet" type="text/css" href="styles/form.css">
 
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/validate.js"></script>
-<script type="text/javascript"> 
-		    $(document).ready(function() { 
-		      $("#contactForm").validate({ 
-	        rules: { 
-		          name: { 
-		            required: true
-		            },
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+						$("#contactForm").validate({
+							rules : {
+								name : {
+									required : true
+								},
 
-		          email: {
-		          required: true, 
-		          email: true 
-		        },  
+								email : {
+									required : true,
+									email : true
+								},
 
-		            phone: {
-	      required: false,
-	      phoneUS: true
-	    }
-		        }, 
+								phone : {
+									required : false,
+									phoneUS : true
+								}
+							},
 
-		      }); 
+						});
 
-		      jQuery.validator.addMethod("phoneUS", function(phone_number, element) {
-	    phone_number = phone_number.replace(/\s+/g, ""); 
-		return this.optional(element) || phone_number.length > 9 &&
-			phone_number.match(/^(1-?)?(\([2-9]\d{2}\)|[2-9]\d{2})-?[2-9]\d{2}-?\d{4}$/);
-	}, "Please enter a valid phone number");
+						jQuery.validator
+								.addMethod(
+										"phoneUS",
+										function(phone_number, element) {
+											phone_number = phone_number
+													.replace(/\s+/g, "");
+											return this.optional(element)
+													|| phone_number.length > 9
+													&& phone_number
+															.match(/^(1-?)?(\([2-9]\d{2}\)|[2-9]\d{2})-?[2-9]\d{2}-?\d{4}$/);
+										}, "Please enter a valid phone number");
 
-		    }); 
+					});
 </script>
 
 </head>
 
 <body>
 
-<div id="preload">
-   <img src="images/navHomeOn.png" width="1" height="1" />
-   <img src="images/navCoversOn.png" width="1" height="1" />
-   <img src="images/navGussetsOn.png" width="1" height="1" />
-   <img src="images/navProjectsOn.png" width="1" height="1" />
-   <img src="images/navContactOn.png" width="1" height="1" />
-   <img src="images/featureCoversOn.png" width="1" height="1" />
-   <img src="images/featureGussetsOn.png" width="1" height="1" />
-   <img src="images/featureFabOn.png" width="1" height="1" />
-</div>
+	<div id="preload">
+		<img src="images/navHomeOn.png" width="1" height="1" /> <img
+			src="images/navCoversOn.png" width="1" height="1" /> <img
+			src="images/navGussetsOn.png" width="1" height="1" /> <img
+			src="images/navProjectsOn.png" width="1" height="1" /> <img
+			src="images/navContactOn.png" width="1" height="1" /> <img
+			src="images/featureCoversOn.png" width="1" height="1" /> <img
+			src="images/featureGussetsOn.png" width="1" height="1" /> <img
+			src="images/featureFabOn.png" width="1" height="1" />
+	</div>
 
-<div id="container">
-<div id="head"><img src="images/mainBg/top5.jpg" /><img src="images/mainBg/bottom5.jpg" /></div>
-<div id="nav" class="set5">
-  
-	<ul class="navPrimary">
-	  <li><a href="index.html">home</a></li>
-	  <li><a href="bumpers.html">bumpers</a></li>
-	  <li><a href="covers.html">covers</a></li>
-	  <li><a href="gussets.html">gussets</a></li>
-	  <li><a href="projects.html">projects</a></li>
-	  <li><a href="shirts.html">shirts</a></li>
-	  <li><a href="contact.html" class="current">contact</a></li>
-	</ul>
-  
-</div>
-<div id="content"><div id="social"><a href="http://www.facebook.com/pages/Mercenary-Offroad/140163362713017?ref=ts"><img src="images/fb.png" alt="Mercenary Offroad on Facebook"/></a></div>
-<div class="bodyCopy"><h1>Contact Us</h1>
-	<p><strong>Mercenary Offroad</strong> is located in Camarillo, California. For information,  appointments, or to discuss your project, call us at 818 653-6637 or use the form below.</p>
-	
-	<form class="form" name="contactForm" id="contactForm" action="scripts/sendContact.php" method="post" onSubmit="return checkForm(contactForm);">
-			
-			<p class="name">					
-				<label for="name">Name:</label>
-				<input type="text" name="name" id="name"  />
-			</p>
-			<p class="phone">		
-				<label for="mail">Phone:</label>
-				<input type="text" name="phone" id="phone"  />
-			</p>
-			<p class="email">		
-				<label for="subject">E-mail:</label>
-				<input type="text" name="email" id="email" />
-			</p>
-			<p class="message">		
-				<label for="message">Message:</label>
-				<textarea name="message"></textarea> 
-			</p>
-			<p>		
-				<button class="sendButton" id="submit" type="submit" value="Send" />Send</button>
-			</p>					
-			</form>
+	<div id="container">
+		<div id="head">
+			<img src="images/mainBg/top5.jpg" /><img
+				src="images/mainBg/bottom5.jpg" />
+		</div>
+		<div id="nav" class="set5">
+
+			<ul class="navPrimary">
+				<li><a href="index.html">home</a></li>
+				<li><a href="bumpers.html">bumpers</a></li>
+				<li><a href="covers.html">covers</a></li>
+				<li><a href="gussets.html">gussets</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href="shirts.html">shirts</a></li>
+				<li><a href="contact.html" class="current">contact</a></li>
+			</ul>
+
+		</div>
+		<div id="content">
+			<div id="social">
+				<a
+					href="http://www.facebook.com/pages/Mercenary-Offroad/140163362713017?ref=ts"><img
+					src="images/fb.png" alt="Mercenary Offroad on Facebook" /></a>
 			</div>
-</div>
-<div id="footer"></div>
-</div>
+			<div class="bodyCopy">
+				<h1>Contact Us</h1>
+				<p>
+					<strong>Mercenary Offroad</strong> is located in Camarillo,
+					California. For information, appointments, or to discuss your
+					project, call us at 818 653-6637 or use the form below.
+				</p>
+
+				<form class="form" name="contactForm" id="contactForm"
+					action="scripts/sendContact.php" method="post"
+					onSubmit="return checkForm(contactForm);">
+
+					<p class="name">
+						<label for="name">Name:</label> <input type="text" name="name"
+							id="name" />
+					</p>
+					<p class="phone">
+						<label for="mail">Phone:</label> <input type="text" name="phone"
+							id="phone" />
+					</p>
+					<p class="email">
+						<label for="subject">E-mail:</label> <input type="text"
+							name="email" id="email" />
+					</p>
+					<p class="message">
+						<label for="message">Message:</label>
+						<textarea name="message"></textarea>
+					</p>
+					<p>
+						<button class="sendButton" id="submit" type="submit" value="Send" />
+						Send
+						</button>
+					</p>
+				</form>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
 </body>
 </html>
